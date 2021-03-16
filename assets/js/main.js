@@ -162,34 +162,6 @@
     });
   }
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Porfolio isotope and filter
-  $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-    });
-
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
-      $('.venobox').venobox({
-        'share': false
-      });
-    });
-  });
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
@@ -200,3 +172,20 @@
   });
 
 })(jQuery);
+
+// Clients carousel (uses the Owl Carousel library)
+$(".clients-carousel").owlCarousel({
+  autoplay: true,
+  loop: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    300: {
+      items: 2
+    },
+    600: {
+      items: 3
+    }
+  }
+});

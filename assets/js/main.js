@@ -163,6 +163,55 @@
   }
 })(jQuery);
 
+$('.floorbtn').click(function(){
+  $('.floor').show();
+  $('.wall').hide();
+  $('.door').hide();
+  $('.molding').hide();
+  $('.sheet').hide();
+  $('.furniture').hide();
+});
+$('.wallbtn').click(function(){
+  $('.floor').hide();
+  $('.wall').show();
+  $('.door').hide();
+  $('.molding').hide();
+  $('.sheet').hide();
+  $('.furniture').hide();
+});
+$('.doorbtn').click(function(){
+  $('.floor').hide();
+  $('.wall').hide();
+  $('.door').show();
+  $('.molding').hide();
+  $('.sheet').hide();
+  $('.furniture').hide();
+});
+$('.moldingbtn').click(function(){
+  $('.floor').hide();
+  $('.wall').hide();
+  $('.door').hide();
+  $('.molding').show();
+  $('.sheet').hide();
+  $('.furniture').hide();
+});
+$('.sheetbtn').click(function(){
+  $('.floor').hide();
+  $('.wall').hide();
+  $('.door').hide();
+  $('.molding').hide();
+  $('.sheet').show();
+  $('.furniture').hide();
+});
+$('.furniturebtn').click(function(){
+  $('.floor').hide();
+  $('.wall').hide();
+  $('.door').hide();
+  $('.molding').hide();
+  $('.sheet').hide();
+  $('.furniture').show();
+});
+
 
 function createSlick(){
   $(".slider").not('.slick-initialized').slick({

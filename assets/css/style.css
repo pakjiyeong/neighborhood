@@ -585,12 +585,13 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 40px 50px;
+  padding: 30px 40px;
   transition: all ease-in-out 0.3s;
   background: #fefefe;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
   border-radius: 18px;
   border-bottom: 5px solid #fff;
+  margin: 0 auto;
 }
 
 .services .icon-box .icon {
@@ -645,7 +646,7 @@ section {
   padding: 12px 30px;
   border-radius: 2px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 40px;
   background: #009961;
   color: #fff;
   border-radius: 50px;

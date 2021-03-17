@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>KnightOne Bootstrap Template - Index</title>
+  <title>이웃집 | 이제는 웃으면서 집구하자</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,11 +23,11 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/swiper.css">
 
   <!-- =======================================================
   * Template Name: KnightOne - v2.2.1
@@ -51,29 +51,11 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li class="drop-down"><a href="">Drop Down</a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="drop-down"><a href="#">Deep Drop Down</a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li>
-
+              <li><a href="#about">이웃집은?</a></li>
+              <li><a href="#services">인테리어 제품</a></li>
+              <li><a href="#cta">전시장</a></li>
+              <li><a href="#partners">협력업체</a></li>
+              <li><a href="#portfolio">시공사례</a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
@@ -82,7 +64,7 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= home Section ======= -->
+  <!-- ======= Home Section ======= -->
   <section id="home" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
@@ -96,12 +78,12 @@
         </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End Home -->
 
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <!-- <section id="about" class="about">
       <div class="container">
 
         <div class="section-title">
@@ -130,7 +112,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
@@ -139,7 +121,7 @@
 
         <div class="section-title">
           <h2>인테리어 제품</h2>
-          <p>심미성과 실용성을 극대화한 와이드 바닥재부터 부담없는 편안함, 보박한 멋을 담은 강마루까지 이웃집에서는 바닥재, 벽면재, 도어재 등 인테리어에 맞게 분류해 두었습니다. 지금 바로 내게 꼭 맞는 제품을 골라보세요.</p>
+          <p>심미성과 실용성을 극대화한 와이드 바닥재부터 부담없는 편안함, 소박한 멋을 담은 강마루까지 이웃집에서는 바닥재, 벽면재, 도어재 등 인테리어에 맞게 분류해 두었습니다. 지금 바로 내게 꼭 맞는 제품을 골라보세요.</p>
         </div>
 
         <div class="row">
@@ -184,7 +166,23 @@
               <h4><a href="">가구재</a></h4>
             </div>
           </div>
-
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="assets/img/service-floor1.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/service-floor2.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/service-floor3.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/service-floor4.jpg" alt="">
+          </div>
+        </div>
+        <div class="text-right">
+          <a class="service-btn align-middle" href="#">>>더 많은 상품</a>
         </div>
 
       </div>
@@ -269,8 +267,8 @@
       </div>
     </section><!-- End partners Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="section-title">
         <h2>시공사례</h2>
@@ -278,21 +276,63 @@
         </div>
       </div>
       <div class="container-fluid" data-aos="zoom-in">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="owl-carousel clients-carousel">
-              <a href="portfolio.html"><img src="assets/img/slide1.jpg" alt="시공사례"></a>
-              <a href="portfolio.html"><img src="assets/img/slide2.jpg" alt="시공사례"></a>
-              <a href="portfolio.html"><img src="assets/img/slide3.jpg" alt="시공사례"></a>
-              <a href="portfolio.html"><img src="assets/img/slide4.jpg" alt="시공사례"></a>
-              <a href="portfolio.html"><img src="assets/img/slide5.jpg" alt="시공사례"></a>
-              <a href="portfolio.html"><img src="assets/img/slide6.jpg" alt="시공사례"></a>
+        <div class="slider">
+          <div>
+            <img src="assets/img/slide1.jpg">
+            <div class="desc">
+              <h2>따뜻하고 단정한 첫 신혼집</h2>
+              <p>24평 복도식 아파트</p>
+              <a href="#" class="btn">보러가기</a>
             </div>
           </div>
+        
+          <div>
+            <img src="assets/img/slide2.jpg">
+            <div class="desc">
+              <h2>깔끔한 화이트에 레드로 포인트를!</h2>
+              <p>22평 아파트</p>
+              <a href="#" class="btn">보러가기</a>
+            </div>
+          </div>
+        
+          <div>
+            <img src="assets/img/slide3.jpg">
+            <div class="desc">
+              <h2>내가 좋아하는 음악&책으로 채운 집</h2>
+              <p>40평 빌라</p>
+              <a href="#" class="btn">보러가기</a>
+            </div>
+          </div>
+        
+          <div>
+            <img src="assets/img/slide4.jpg">
+            <div class="desc">
+              <h2>세련된 부티크 호텔 같은 공간</h2>
+              <p>30평형대 아파트</p>
+              <a href="#" class="btn">보러가기</a>
+            </div>
+          </div>
+        
+          <div>
+            <img src="assets/img/slide5.jpg">
+            <div class="desc">
+              <h2>쏟아지는 빛, 탁 트인 뷰</h2>
+              <p>28평 아파트</p>
+              <a href="#" class="btn">보러가기</a>
+            </div>
+          </div>
+        
+          <div>
+            <img src="assets/img/slide6.jpg">
+            <div class="desc">
+              <h2>빈티지 느낌 가득, 로망을 다 담은 집</h2>
+              <p>40평대 아파트</p>
+              <a href="#" class="btn">보러가기</a>
+            </div>
+          </div>    
         </div>
       </div>
-    </section><!-- End Clients Section -->
-   
+    </section><!-- End Portfolio Section -->
 
   </main><!-- End #main -->
 
@@ -321,8 +361,31 @@
     </div>
   </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <!-- <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
+
+  <div class="floating-chat">
+    <i class='bx bxs-message-alt-dots' aria-hidden="true"></i>
+    <div class="chat">
+        <div class="header">
+            <span class="title">
+                실시간 상담하기
+            </span>
+            <button> 
+              <i class='bx bx-x' aria-hidden="true"></i>
+            </button>                         
+        </div>
+        <ul class="messages">            
+            <li class="self">안녕하세요.</li>
+            <li class="other">반갑습니다.</li>
+            <li class="other">이웃집입니다.</li>
+        </ul>
+        <div class="chat-footer">            
+            <div class="text-box" contenteditable="true" disabled="true"></div>
+            <button id="sendMessage"><i class='bx bx-send' ></i></button>
+        </div>
+    </div>
+</div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -330,15 +393,21 @@
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script type="text/javascript">
+
+
+  </script>
+  <script>
+    
+  </script>
 </body>
 
 </html>

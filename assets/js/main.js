@@ -212,9 +212,9 @@ $('.furniturebtn').click(function(){
   $('.furniture').show();
 });
 
-
+// Portfolio------------------------------------------------------
 function createSlick(){
-  $(".slider").not('.slick-initialized').slick({
+  $(".portfolio .slider").not('.portfolio .slick-initialized').slick({
     centerMode: true,
       autoplay: true,
       dots: true,
@@ -232,12 +232,30 @@ function createSlick(){
       }]
   });	
 }
-
 createSlick();
 $(window).on( 'resize', createSlick );
+// --------------------------------------------------------------
 
+// Partners------------------------------------------------------
+$(".partners-carousel").owlCarousel({
+  autoplay: true,
+  dots: true,
+  loop: true,
+  responsive: {
+    0: {
+      items: 2
+    },
+    768: {
+      items: 4
+    },
+    900: {
+      items: 6
+    }
+  }
+});
+// --------------------------------------------------------------
 
-
+// Floating-chat-------------------------------------------------
 var element = $('.floating-chat');
     var myStorage = localStorage;
 
@@ -322,3 +340,4 @@ var element = $('.floating-chat');
             sendNewMessage();
         }
     }
+    // --------------------------------------------------------------

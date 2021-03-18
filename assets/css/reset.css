@@ -194,8 +194,8 @@ body {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-  .section-bg {
-    background-color: #8fffd6;
+  section {
+    padding: 70px 0;
   }
   
   .section-title {
@@ -207,6 +207,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    text-align: center;
     position: relative;
   }
   
@@ -214,17 +215,18 @@ body {
     content: '';
     position: absolute;
     display: block;
-    width: 100%;
+    width: 50px;
     height: 2px;
     background: #009961;
-    bottom: 0;
-    left: 0;
+    bottom: 0%;
+    left: 48%
   }
   
   .section-title p {
     margin-bottom: 0;
     color: #777777;
     font-size: 15px;
+    text-align: center;
   }
 
   
@@ -233,66 +235,75 @@ body {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-    background: #0f0f0f;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  #footer h3 img{
-    width: 10%;
-  }
-  
-  #footer p {
-    font-size: 15;
-    font-style: italic;
-    padding: 0;
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links {
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #009961;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer .social-links a:hover {
-    background: #00b371;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #footer .copyright {
-    margin: 0 0 5px 0;
-  }
-  
-  #footer .credits {
-    font-size: 13px;
-  }
-  
-  #footer .credits a {
-    color: #00b371;
-    transition: 0.3s;
-  }
-  
-  #footer .credits a:hover {
-    color: #009961;
-  }
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
 
+.bg-dark {
+  padding: 10px 0;
+}
+
+#footer a {
+  line-height: 25px;
+  font-size: 15px;
+  color: #ececec;
+}
+
+#footer a:hover {
+  font-weight: bold;
+}
+
+#footer span {
+  padding: 0 10px;
+  color: #ececec;
+}
+
+#footer img{
+  width: 15%;
+  padding: 20px 0;
+}
+
+.bg-dark p {
+  font-size: 13px;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-secondary {
+  padding: 10px 0;
+}
+
+.bg-secondary p {
+  text-align: left;
+  font-style: normal !important;
+  padding: 0px;
+}
+
+#footer .social-links {
+  display: inline-block;
+  text-align: left;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 10%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
 
 /* -------------------------------------------------------------
 Floating-chat area
@@ -305,10 +316,10 @@ Floating-chat area
     justify-content: center;
     color: white;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
     transform: translateY(70px);
     transition: all 250ms ease-out;
     border-radius: 50%;
@@ -318,7 +329,10 @@ Floating-chat area
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  
+
+  .floating-chat i {
+    font-size: 30px;
+  }
   .floating-chat.enter:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     opacity: 1;
@@ -491,7 +505,7 @@ Floating-chat area
   
   .floating-chat .chat .chat-footer {
     flex-shrink: 0;
-    /*display: flex;*/
+    display: flex;
     padding-top: 10px;
     max-height: 90px;
     background: transparent;
